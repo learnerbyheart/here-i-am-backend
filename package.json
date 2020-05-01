@@ -1,0 +1,28 @@
+{
+  "name": "here-i-am-backend",
+  "version": "0.1.0",
+  "description": "A simple backend for the here I am app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest --no-cache ./*",
+    "watch": "jest --watch --bail=20"
+  },
+  "author": "Lucas Pradel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "package.json"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-jest": "^25.5.1",
+    "jest": "^25.5.3",
+    "nodemon": "^2.0.3"
+  }
+}
