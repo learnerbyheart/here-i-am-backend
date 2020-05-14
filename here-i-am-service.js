@@ -1,7 +1,7 @@
 module.exports = function HereIAmService() {
-    let data = { latitude: null, longitude: null, time: null };
+    let data = { latitude: null, longitude: null, date: null };
 
-    function saveLocation(latitude, longitude, time = new Date()) {
+    function saveLocation(latitude, longitude, date = new Date()) {
         if (!isNumeric(latitude)) {
             throw new Error('latitude should be a number')
         }
@@ -15,10 +15,10 @@ module.exports = function HereIAmService() {
         if (longitude < -180 || longitude > 180) {
             throw new Error('longitude must be within [-180, 180]')
         }
-        if (typeof time.getMonth !== 'function') {
-            throw new Error('time should be of type date')
+        if (typeof date.getMonth !== 'function') {
+            throw new Error('date should be of type date')
         }
-        data = { latitude, longitude, time };
+        data = { latitude, longitude, date };
         return data;
     }
 
