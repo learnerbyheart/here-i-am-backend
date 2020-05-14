@@ -1,7 +1,7 @@
 {
   "name": "here-i-am-backend",
   "version": "0.1.0",
-  "description": "A simple backend for the here I am app",
+  "description": "Backend for the open source real-time location sharing app here i am",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
